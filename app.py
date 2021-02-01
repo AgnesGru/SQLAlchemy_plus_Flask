@@ -3,9 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.ext.automap import automap_base
 
 app = Flask(__name__)
-
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///agidb.db'
-
 db = SQLAlchemy(app)
 
 Base = automap_base()
